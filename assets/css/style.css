@@ -12,22 +12,41 @@
 
 :root {
 
-    /* Brand Colors */
+
+    /*==================================================
+      Brand Colors
+    ==================================================*/
+
     --color-primary: #9065B0;
     --color-primary-dark: #6F4A8E;
     --color-primary-light: #F3ECF8;
 
-    /* Neutral Colors */
+
+    /*==================================================
+      Neutral Colors
+    ==================================================*/
+
     --color-white: #FFFFFF;
     --color-background: #FAFAFC;
     --color-border: #E8E8E8;
 
-    /* Text Colors */
+
+    /*==================================================
+      Text Colors
+    ==================================================*/
+
     --color-text: #2E2E2E;
     --color-text-light: #6B7280;
 
-    /* Typography */
+
+    /*==================================================
+      Typography
+    ==================================================*/
+
     --font-family: 'Roboto', sans-serif;
+
+
+    /* Font Sizes */
 
     --font-size-xs: .875rem;
     --font-size-sm: 1rem;
@@ -36,29 +55,62 @@
     --font-size-xl: 2.5rem;
     --font-size-xxl: 3.5rem;
 
+
     /* Font Weight */
+
     --font-light: 300;
     --font-regular: 400;
     --font-medium: 500;
     --font-bold: 700;
 
-    /* Layout */
+
+
+    /*==================================================
+      Layout
+    ==================================================*/
+
     --container-width: 1200px;
 
-    /* Spacing */
+    --text-width: 700px;
+
+
+
+    /*==================================================
+      Spacing System
+    ==================================================*/
+
     --space-xs: .5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
     --space-lg: 4rem;
     --space-xl: 6rem;
 
-    /* Border */
+
+
+    /*==================================================
+      Borders
+    ==================================================*/
+
     --border-radius: 12px;
 
-    /* Shadow */
-    --shadow-sm: 0 4px 12px rgba(0,0,0,.06);
 
-    /* Animation */
+
+    /*==================================================
+      Shadows
+    ==================================================*/
+
+    --shadow-sm: 0 4px 12px rgba(0,0,0,.06);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.10);
+
+
+
+    /*==================================================
+      Animation
+    ==================================================*/
+
+    --transition-fast: .2s ease;
     --transition: .3s ease;
+    --transition-slow: .5s ease;
+
 
 }
