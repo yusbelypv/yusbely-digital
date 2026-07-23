@@ -114,3 +114,145 @@
 
 
 }
+
+
+/*==================================================
+  2. CSS RESET
+==================================================*/
+
+
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: var(--font-family);
+    background: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+
+}
+
+
+img {
+
+    max-width: 100%;
+    display: block;
+
+}
+
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+ul,
+ol {
+
+    list-style: none;
+
+}
+
+/*==================================================
+  3. BASE STYLES
+==================================================*/
+
+
+body {
+
+    font-size: var(--font-size-sm);
+
+}
+
+
+.container {
+
+    width: min(90%, var(--container-width));
+    margin-inline: auto;
+
+}
+
+
+section {
+
+    padding: var(--space-xl) 0;
+
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-weight: var(--font-bold);
+    line-height: 1.2;
+
+}
+
+
+h1 {
+
+    font-size: var(--font-size-xxl);
+
+}
+
+
+h2 {
+
+    font-size: var(--font-size-xl);
+
+}
+
+
+h3 {
+
+    font-size: var(--font-size-lg);
+
+}
+
+
+p {
+
+    color: var(--color-text-light);
+    max-width: var(--text-width);
+
+}
+
+
+button {
+
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+::selection {
+
+    background: var(--color-primary);
+    color: var(--color-white);
+
+}
+
+
