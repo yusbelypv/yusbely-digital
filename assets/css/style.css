@@ -255,4 +255,85 @@ button {
 
 }
 
+/*==================================================
+  4. TYPOGRAPHY
+==================================================*/
+
+
+body {
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-regular);
+
+}
+
+
+/* Main Heading */
+
+.hero-title {
+
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+
+}
+
+
+/* Section Titles */
+
+.section-title {
+
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-md);
+
+}
+
+
+/* Subtitles */
+
+.subtitle {
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-medium);
+
+}
+
+
+/* Highlight Text */
+
+.highlight {
+
+    color: var(--color-primary);
+
+}
+
+
+/* Small Text */
+
+.text-small {
+
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+
+}
+
+
+/* Links */
+
+.link {
+
+    color: var(--color-primary);
+    transition: var(--transition);
+
+}
+
+
+.link:hover {
+
+    color: var(--color-primary-dark);
+
+}
+
+
 
