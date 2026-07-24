@@ -575,6 +575,62 @@ footer {
 }
 
 /*==================================================
+  HEADER
+==================================================*/
+
+.header {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+.logo {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    color: var(--color-primary-dark);
+}
+
+.main-nav .nav-list {
+    display: flex;
+    gap: var(--space-md);
+    list-style: none;
+}
+
+.main-nav a {
+    color: var(--color-text);
+    font-weight: var(--font-medium);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*==================================================
   7. SECTIONS
 ==================================================*/
 
