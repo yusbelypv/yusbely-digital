@@ -1441,25 +1441,6 @@ p {
   ANIMATIONS
 ==================================================*/
 
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
 
 @keyframes fadeUp{
 
@@ -1499,6 +1480,22 @@ p {
 
         transform:translateY(0);
 
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translate(-50%,0);
+    }
+
+    50%{
+        transform:translate(-50%,8px);
+    }
+
+    100%{
+        transform:translate(-50%,0);
     }
 
 }
@@ -1550,11 +1547,11 @@ p {
 
     display:grid;
 
-    grid-template-columns:420px 1fr;
-
-    align-items:center;
+    grid-template-columns:1fr 1fr;
 
     gap:var(--space-xl);
+
+    align-items:center;
 
 }
 
@@ -1687,8 +1684,6 @@ p {
     transform:translateY(-3px);
 
 }
-
-
 
 
 /*==================================================
@@ -2022,7 +2017,27 @@ footer p {
 
     }
 
+    .about-container{
 
+      grid-template-columns:1fr;
+
+      text-align:center;
+
+
+
+    }
+
+    .about-content{
+
+      align-items:center;
+
+    }
+
+    .about-image{
+
+      order:-1;
+
+     }
 
 
 
