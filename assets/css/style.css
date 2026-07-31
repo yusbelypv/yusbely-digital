@@ -736,6 +736,49 @@ p {
 
 }
 
+/*==================================================
+  MOBILE MENU BUTTON
+==================================================*/
+
+
+.menu-toggle {
+
+    display:none;
+
+}
+
+
+
+.menu-button {
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    cursor:pointer;
+
+}
+
+
+
+.menu-button span {
+
+
+    width:28px;
+
+    height:3px;
+
+    background:var(--color-primary);
+
+    border-radius:20px;
+
+    transition:.3s ease;
+
+
+}
+
 .logo {
 
     display: flex;
@@ -1088,6 +1131,8 @@ p {
     width:100%;
 
     height:100%;
+
+    aspect-ratio:1 / 1;
 
     object-fit:cover;
 
@@ -2438,14 +2483,79 @@ opacity:.5;
 
 
 
-    /* HEADER */
+/* HEADER */
 
 
-    .header-content {
+/*==================================================
+  HEADER MOBILE
+==================================================*/
 
-        min-height:75px;
 
-    }
+.header-content {
+
+    min-height:70px;
+
+}
+
+
+
+.logo img {
+
+    width:140px;
+
+}
+
+
+
+.menu-button {
+
+    display:flex;
+
+}
+
+
+
+.main-nav {
+
+    position:absolute;
+
+    top:70px;
+
+    left:0;
+
+    width:100%;
+
+    background:var(--color-white);
+
+    padding:2rem 1.5rem;
+
+    box-shadow:var(--shadow-md);
+
+    transform:translateY(-150%);
+
+    transition:.3s ease;
+
+}
+
+
+
+.main-nav .nav-list {
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+    text-align:center;
+
+}
+
+
+
+.menu-toggle:checked ~ .main-nav {
+
+    transform:translateY(0);
+
+}
 
 
 
@@ -2643,37 +2753,97 @@ opacity:.5;
 
 
 
-    /* HEADER */
+    /*==================================================
+  HEADER MOBILE
+==================================================*/
 
 
-    .header-content {
-
-        min-height:70px;
-
-    }
+.header-content {
 
 
+    min-height:70px;
 
-    .logo img {
 
-        width:140px;
-
-    }
+}
 
 
 
-    .main-nav {
-
-        display:none;
-
-    }
+.logo img {
 
 
+    width:140px;
 
-    /*
-    Future mobile menu
-    will be added here
-    */
+
+}
+
+
+
+.menu-button {
+
+
+    display:flex;
+
+
+}
+
+
+
+.header-actions {
+
+
+    display:none;
+
+
+}
+
+
+
+.main-nav {
+
+
+    position:absolute;
+
+    top:70px;
+
+    left:0;
+
+    width:100%;
+
+    background:var(--color-white);
+
+    padding:2rem 1.5rem;
+
+    box-shadow:var(--shadow-md);
+
+    transform:translateY(-150%);
+
+    transition:.3s ease;
+
+}
+
+
+
+.nav-list {
+
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+    text-align:center;
+
+
+}
+
+
+
+.menu-toggle:checked ~ .main-nav {
+
+
+    transform:translateY(0);
+
+
+}
 
 
 
@@ -2732,13 +2902,15 @@ opacity:.5;
 
 
 
-    .hero-image-wrapper {
+.hero-image-wrapper {
 
-        width:280px;
+    width:280px;
 
-        padding:12px;
+    height:280px;
 
-    }
+    padding:12px;
+
+}
 
 
 
@@ -3836,6 +4008,31 @@ button,
   ADDITIONAL PROJECTS IMAGES
 ==================================================*/
 
+@media(max-width:768px){
+
+
+    .additional-slider {
+
+        flex-direction:column;
+
+        overflow-x:visible;
+
+        gap:1.5rem;
+
+    }
+
+
+
+    .additional-card {
+
+        min-width:100%;
+
+        max-width:100%;
+
+    }
+
+
+}
 
 .additional-image {
 
@@ -4011,5 +4208,153 @@ grid-template-columns: 1fr;
 .header .main-nav .nav-list a {
 
     font-weight:500 !important;
+
+}
+
+
+/*==================================================
+  TEMPLATES PAGE
+==================================================*/
+
+
+.templates-page {
+
+    padding:6rem 0;
+
+    background:var(--color-background);
+
+}
+
+
+
+.templates-grid {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+    margin-top:3rem;
+
+
+}
+
+
+
+.template-card {
+
+
+    background:var(--color-white);
+
+    border-radius:var(--border-radius-lg);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.3s ease;
+
+
+}
+
+
+
+.template-card:hover {
+
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-md);
+
+
+}
+
+
+
+.template-card img {
+
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+
+}
+
+
+
+.template-content {
+
+
+    padding:1.5rem;
+
+
+}
+
+
+
+.template-content h2 {
+
+
+    margin-bottom:1rem;
+
+
+}
+
+
+
+.template-content p {
+
+
+    color:var(--color-text-light);
+
+    line-height:1.7;
+
+
+}
+
+
+
+.template-content span {
+
+
+    display:block;
+
+    margin-top:1rem;
+
+    color:var(--color-primary);
+
+    font-size:.9rem;
+
+
+}
+
+
+
+.template-links {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:1.5rem;
+
+
+}
+
+
+
+.template-links a {
+
+
+    color:var(--color-primary);
+
+    font-weight:500;
+
 
 }
