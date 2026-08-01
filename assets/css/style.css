@@ -1921,6 +1921,21 @@ opacity:.5;
 }
 
 
+.service-link {
+
+    color:var(--color-primary);
+
+    font-weight:600;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.3rem;
+
+}
+
+
 
 /*==================================================
   12. SKILLS SECTION
@@ -4358,3 +4373,4 @@ grid-template-columns: 1fr;
 
 
 }
+
